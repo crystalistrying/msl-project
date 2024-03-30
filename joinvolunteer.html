@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title>MSL - Join Volunteer</title>
+  <meta charset="utf-8">
+  <meta name="Author" content="Joanne,Alfi,Clarice,Crystal,WeeWee">
+  <meta name="Description" content="MSL Website">
+  <meta name="keywords" content="MSL, Malaysian, Sign, Language">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!--Link External CSS-->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<!--start of body-->
+<body>
+ <header>
+    <a href="index.html">
+      <img src="images/msl.png" alt="Malaysian Sign Language Logo" width="200" height="120"></a>
+  
+	<nav>
+		<ul class="navbar">
+			<li><a href="index.html">Home</a></li>
+			<li class="dropdown">
+				<a class="dropbtn" href="services.html">Services</a>
+				<ul class="dropdown-content">
+					<li><a href="services_bimclass.html">BIM Class</a></li>
+			        <li><a href="services_charitycw.html">Charity Car Wash</a></li>
+			        <li><a href="services_hairandtrim.html">Haircut and Trimming</a></li>
+			        <li><a href="services_sewandalt.html">Sewing and Alteration</a></li>
+	       		</ul>
+	       	</li>
+	       	<li class="dropdown">
+				<a class="dropbtn" href="activities.html">Activities</a>
+				<ul class="dropdown-content">
+					<li><a href="ouractivities.html">Our Activities</a></li>
+			        <li><a href="deafawareness.html">Deaf Awareness</a></li>
+	       		</ul>
+	       	</li>
+	     	<li class="dropdown">
+	        	<a class="dropbtn" href="forms.html">Forms</a>
+	        	<ul class="dropdown-content"> 
+		          <li><a href="enquiryservice.html">Enquiry Service</a></li>
+		          <li><a href="joinvolunteer.html">Join Volunteer</a></li>
+		        </ul>
+	      	</li> 
+	      	<li class="dropdown">
+	        	<a class="dropbtn" href="members.html">Member Profile</a>
+	        	<ul class="dropdown-content"> 
+		          <li><a href="memberprofile1.html">Joanne Jong</a></li>
+		          <li><a href="memberprofile2.html">Alfi Diyana Ngu</a></li>
+		          <li><a href="memberprofile3.html">Clarice Shim</a></li>
+		          <li><a href="memberprofile4.html">Crystal Ong</a></li>
+		          <li><a href="memberprofile5.html">Loh Wee Wee</a></li>
+	        	</ul>
+	      	</li> 
+	      	<li><a href="registration.html">Registration</a></li>
+	    </ul>
+	</nav>
+
+	<div id="mySidenav" class="sidenav">
+      <a href="index.html" id="home">Home</a>
+      <a href="services.html" id="services">Services</a>
+      <a href="activities.html" id="activities">Activities</a>
+      <a href="forms.html" id="forms">Forms</a>
+      <a href="members.html" id="members">Members</a>
+      <a href="registration.html" id="registration">Registration</a>
+    </div>
+</header>
+
+
+<!--content starts HERE-->
+<article>
+<h1>Join Volunteer</h1>
+<form name="enquiry" method="post" action="mailto:msl@gmail.com" enctype="text/plain">
+	<fieldset class="inside3">
+	<legend class="detailss">Personal Details</legend>
+	<table class="volunteertable">
+		<tr>
+			<td>
+				<label class="one">Name</label><br>
+				<div class="container1">
+					<div class="box1">
+						<input type="text" name="first_name" maxlength="25" required="required" class="input_con" pattern="[A-Za-z]+" placeholder="First Name">
+					</div>
+					<div class="box1">
+						<input type="text" name="last_name" maxlength="25" required="required" class="input_con" pattern="[A-Za-z]+" placeholder="Last Name">
+					</div>
+				</div>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<label class="one">Age</label><br>
+				<input type="number" name="age" min="18" max="80" required="required" class="age">
+			</td>
+		</tr>
+		
+		<tr>
+			<td class="radiobutton">
+				<label class="one">Gender</label><br>
+				<p>
+					<input type="radio" id="male" name="gender" value="male" checked><label for="male" class="three">Male</label> 
+					<input type="radio" id="female" name="gender" value="female"><label for="female" class="three">Female</label>
+				</p>
+			</td>
+		</tr>
+		
+		<tr>
+			<td class="radiobutton">
+				<label class="one">Nationality</label><br>
+					<p>
+					<input type="radio" id="sarawakian" name="nationality" value="sarawakian" checked><label for ="sarawakian" class="three"> Malaysian (Sarawakian) </label>
+					<input type="radio"  id="non-sarawakian" name="nationality" value="non-sarawakian"><label for ="non-sarawakian" class="three"> Malaysian (Non-Sarawakian) </label>
+					<input type="radio" id="non-malaysian" name="nationality" value="non-malaysian"><label for ="non-malaysian" class="three"> Non-Malaysian </label>
+					</p>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<label class="one">Phone Number</label><br>
+				<input type ="tel" id="phonenum" name="phone" maxlength="10" required="required" placeholder="eg.60123456789">
+			</td>
+		</tr>
+		
+		<tr>
+		    <td>
+		    	<label for="email" class="one">Email</label><br>
+                <input type="email" id="email" name="email" maxlength="40" placeholder="example@example.com">
+			</td>
+		</tr>
+	</table>
+	</fieldset>
+		
+
+	<fieldset class="inside3">
+	<legend class="detailss">Address Details</legend>
+	<table class="volunteertable">
+		<tr>
+			<td>
+				<label class="one">Street Address</label><br>
+				<input type="text" name="street_address" maxlength="40" required="required" class="input_con">
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<label class="one">City/Town</label><br>
+				<input type="text" name="city" maxlength="20" required="required" class="input_con">
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<label class="one">State</label><br>
+				<select name="state" id="state">
+					<optgroup label="States">
+						<option value="">Please select</option>
+						<option value="johor">Johor</option>			
+						<option value="Kedah">Kedah</option>	
+						<option value="Kelantan">Kelantan</option>	
+						<option value="Malacca">Malacca</option>	
+						<option value="Negeri Sembilan">Negeri Sembilan</option>	
+						<option value="Pahang">Pahang</option>
+						<option value="Penang">Penang</option>	
+						<option value="Perak">Perak</option>	
+						<option value="Perlis">Perlis</option>	
+						<option value="Sabah">Sabah</option>	
+						<option value="Sarawak">Sarawak</option>	
+						<option value="Terengganu">Terengganu</option>	
+					</optgroup>
+					<optgroup label="Federal Territories">
+						<option value="Kuala Lumpur">Kuala Lumpur</option>	
+						<option value="Labuan">Labuan</option>	
+						<option value="Putrajaya">Putrajaya</option>
+					</optgroup>
+				</select>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<label class="one">Postcode</label><br>
+				<input type="text" name="postcode" maxlength="5" required="required" class="input_con" pattern="[0-9]*">
+			</td>
+		</tr>	
+	</table>
+	</fieldset>
+		
+	
+
+	<fieldset class="inside3">
+	<legend class="detailss">Volunteering Details</legend>
+	<table class="volunteertable">
+		<tr>
+			<td>
+			<label class="one">What can you help with?</label><br>
+			<select name="enquiry" class="enquiry">
+				<option value="">Please select</option>
+				<optgroup label="MSL">
+					<option value="signvideo">Sign Language Video Recording</option>
+					<option value="researchassist">Research Assistance</option>			
+				</optgroup>
+				<optgroup label="SSD">
+					<option value="serviceassist">Services Assistance</option>
+					<option value="employment">Deaf Employment</option>
+					<option value="donation">Donation</option>
+					<option value="communication">Home-based Assistance</option>
+					<option value="technology">Office-based Assistance</option>
+				</optgroup>
+			</select>
+			</td>
+		</tr>
+		
+		<tr>
+			<td class="checkbox">
+				<label class="one">Which days of the week are you available to volunteer?</label>
+				<p>
+				<input type="checkbox" name="mon" value="monday" id="monday" checked><label for ="monday" class="three"> Monday </label>
+				<input type="checkbox" name="tue" value="tuesday" id="tuesday"><label for ="tuesday" class="three"> Tuesday </label>
+				<input type="checkbox" name="wed" value="wednesday" id="wednesday"><label for ="wednesday" class="three"> Wednesday </label>
+				<input type="checkbox" name="thurs" value="thursday" id="thursday"><label for ="thursday" class="three"> Thursday </label>
+				<input type="checkbox" name="fri" value="friday" id="friday"><label for ="friday" class="three"> Friday </label>
+				<input type="checkbox" name="sat" value="saturday" id="saturday"><label for ="saturday" class="three"> Saturday </label>
+				<input type="checkbox" name="sun" value="sunday" id="sunday"><label for ="sunday" class="three"> Sunday </label>
+				</p>
+			</td>
+		</tr>
+	</table>
+	</fieldset>
+
+    <div class="button-cell">
+        <input type="submit" value="Submit" class="submit-button">
+        <input type="reset" value="Cancel" class="cancel-button">
+    </div>
+</form>
+</article>
+<!--content ends here-->
+
+<footer id="sf-footer">
+	<ul class="navVertical">
+		<li>
+		<a href="services.html" target="_self">Services</a>
+			<ul class="sub-level">
+				<li>
+				<a href="services_bimclass.html" target="_blank">BIM Class</a>
+				</li>
+				<li>
+				<a href="services_charitycw.html" target="_blank">Charity Car Wash</a>
+				</li>
+				<li>
+				<a href="services_hairandtrim.html" target="_blank">Haircut and Trimming</a>
+				</li>
+				<li>
+				<a href="services_sewandalt.html" target="_blank">Sewing and Alteration</a>
+				</li>	
+			</ul>
+			<a href="registration.html" target="_self">Registration</a>
+		</li>
+
+		<li>
+		<a href="forms.html" target="_self">Forms</a>
+			<ul class="sub-level">
+				<li>
+				<a href="enquiryservice.html" target="_blank">Enquiry for Service</a>
+				</li>
+				<li class>
+				<a href="joinvolunteer.html" target="_blank">Join Volunteer</a>
+				</li>
+			</ul>
+		<a href="activities.html" target="_self">Activities</a>
+			<ul class="sub-level">
+				<li>
+				<a href="ouractivities.html" target="_blank">Our Activities</a>
+				</li>
+				<li class>
+				<a href="deafawareness.html" target="_blank">Deaf Awareness</a>
+				</li>
+			</ul>
+		</li>
+
+		<li>
+		<a href="members.html" target="_self">Member Profile</a>
+			<ul class="sub-level">
+				<li>
+				<a href="memberprofile1.html" target="_blank">Joanne Jong</a>
+				</li>
+				<li>
+				<a href="memberprofile2.html" target="_blank">Alfi Diyana Ngu</a>
+				</li>
+				<li>
+				<a href="memberprofile3.html" target="_blank">Clarice Shim</a>
+				</li>
+				<li>
+				<a href="memberprofile4.html" target="_blank">Crystal Ong</a>
+				</li>
+				<li>
+				<a href="memberprofile5.html" target="_blank">Loh Wee Wee</a>
+				</li>	
+			</ul>
+		</li>
+		
+		<li>
+			<a href="acknowledgements.html" target="_self">Acknowledgements</a>
+		</li>
+		<li>
+			<a href="enhancements.html" target="_self">Enhancements</a>
+		</li>
+		
+		<li>
+			<img src="images/mslsquare.png" alt="Malaysian Sign Language Logo" width="150" height="150">
+		
+			<div id="partner">
+				<h3>Project Collaborators</h3>
+				<img src="images/ssftdlogo.jpg" alt="Sarawak Society for the deaf Logo" width="70" height="70">
+				<img src="images/swinburnelogo.jpg" alt="Swinburne University of Technology Sarawak  Logo" width="90" height="60">
+			</div>
+		</li>
+	</ul>
+
+	<div id=boomboomfoot class="bottomfoot">
+		<a href="services.html" target="_self">Services</a>
+		<a href="activities.html" target="_self">Activities</a>
+		<a href="forms.html" target="_self">Forms</a>
+		<a href="members.html" target="_self">Member Profile</a>
+		<a href="registration.html" target="_self">Registration</a>
+
+		<br>
+	</div>
+
+<p class="copyrights"> All rights reserved. <a href="mailto:102786674@students.swinburne.edu.my">&copy;Malaysian Sign Language</a></p>
+
+</footer>
+</body>
+</html>
